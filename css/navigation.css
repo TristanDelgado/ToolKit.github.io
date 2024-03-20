@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles:wght@400;700&display=swap');
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333333;
+}
+
+li {
+  float: left;
+  border-style: solid;
+  border-width: 6px;
+  text-align: center;
+  font-family: "Fuzzy Bubbles", sans-serif;
+  font-weight: 400;
+}
+
+li a {
+  display: inline-block;
+  text-align: center;
+  padding: 16px;
+  text-decoration: none;
+  color: white;
+}
+
+li a:hover {
+  background-color: #111111;
+}
+
+ul {
+    list-style-type: none;
+    margin: none;
+}
+
+li {
+    float: left;
+}

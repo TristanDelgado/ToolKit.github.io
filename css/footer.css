@@ -1,0 +1,41 @@
+footer {
+    margin-top: 25vh;
+    margin-left: 15vw;
+    margin-right: 15vw;
+}
+
+footer img {
+    max-width: 3em;
+    max-height: 3em;
+    margin-left: 3px;
+    margin-right: 3px;
+}
+
+footer div {
+  display: flex;
+  flex-direction: row;
+}
+
+div:before, div:after{
+  content: "";
+  flex: 1 1;
+  border-bottom: 3px solid;
+  margin: auto;
+}
+
+div:before {
+  margin-right: 10px
+}
+
+div:after {
+  margin-left: 10px
+}
+
+footer p 
+{
+    text-align: center;
+    font-family: "Fuzzy Bubbles", sans-serif;
+    font-weight: 400;
+    font-size: 3em;
+    color: black;
+}

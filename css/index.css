@@ -1,25 +1,31 @@
 @import url('https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles:wght@400;700&display=swap');
 
+body {
+    background-color: rgb(141, 153, 174);
+}
+
 h1 {
     text-align: center;
     font-family: "Fuzzy Bubbles", sans-serif;
     font-weight: 400;
     font-size: 3em;
+    color: rgb(217, 4, 41);
 }
 #calc {
-
+  background: repeating-linear-gradient(-45deg, rgb(0, 0, 0), rgb(0, 0, 0)  10px, rgb(255, 186, 8) 10px, rgb(255, 186, 8) 20px);
 }
 
 #todo {
-
+    background-image: url(../images/checkmarks.png);
+    background-size: contain;
 }
 
 #timer {
-
+    background-image: url(../images/timerbackground.pdf);
 }
 
 #weather {
-
+  background: repeating-linear-gradient(-45deg, rgb(0, 0, 0), rgb(0, 0, 0)  10px, rgb(255, 186, 8) 10px, rgb(255, 186, 8) 20px);
 }
 
 div {
@@ -35,24 +41,27 @@ button.text {
     font-size: 1.5em;
 }
 
-button.size {
-    border: 10px;
-    border-radius: 30px;
+mark {
+    background-color: white;
+    border-radius: .5em;
+    border-width: 2px;
     border-style: solid;
     border-color: black;
+}
+
+button.size {
+    border: 10px;
+    border-radius: 2em;
+    border-style: solid;
+    border-color: rgb(43, 45, 66);
     height: 175px;
     width: 400px;
     text-align: center; 
     margin-left: 5px;
     margin-right: 5px;
 }
-
-footer {
-    margin-top: 25vh;
-    background-color: lightgray;
-    text-align: left;
+/*
+.button {
+  background: repeating-linear-gradient(45deg, #606dbc, #606dbc 10px, #465298 10px, #465298 20px);
 }
-
-footer p {
-    padding: 10vh;
-}
+*/
