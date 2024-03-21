@@ -1,21 +1,84 @@
 @import url('https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles:wght@400;700&display=swap');
 
-div {
+body {
+    background-color: rgb(141, 153, 174);
+}
+
+#popup {
+    visibility: hidden;
+    background-color: rgb(237, 242, 244);
+    border-style: solid;
+    border-width: 2px;
+    padding: 1em;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 100;
+    font-size: 1.5em;
+}
+input, label {
+    margin: .5em;
 }
 
 table {
     text-align: center;
     font-family: "Fuzzy Bubbles", sans-serif;
     font-weight: 400;
+    font-size: 2em;
     border-style: solid;
     border-width: .5em;
     border-color: rgb(43, 45, 66);
     border-radius: 2em;
+    background-color: rgb(237, 242, 244);
     padding: .5em;
     margin-left: auto;
     margin-right: auto;
+    margin-top: 1em;
 }
  caption {
     text-align: center;
+    color: rgb(237, 242, 244);
 
- }
+}
+
+table th {
+    padding-left: .25em;
+    text-decoration: underline;
+}
+
+table td {
+    color: rgb(239, 35, 60);
+}
+
+#addremovebuttonsdiv {
+    text-align: center;
+}
+
+.buttons {
+    border-style: solid;
+    border-width: 4px;
+    border-color: rgb(43, 45, 66);
+    border-radius: 3em;
+}
+
+#add img {
+    height: 9em;
+    width: 9em;
+    padding: 2em; 
+}
+
+#remove img {
+    height: 11em;
+    width: 11em;
+    padding: 1em;
+}
+
+
+#add {
+    background-color: green;
+}
+
+#remove {
+    background-color: red;
+}

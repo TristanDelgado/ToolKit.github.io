@@ -4,6 +4,8 @@
         <link rel="stylesheet" type="text/css" href="../css/footer.css">
         <link rel="stylesheet" type="text/css" href="../css/navigation.css">
         <link rel="stylesheet" type="text/css" href="../css/countdown.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>s
+        <script type="text/javascript" src="../js/countdown.js"></script>
     </head>
     <body>
         <ul>
@@ -11,9 +13,24 @@
             <li><a href="../html/countdowntimer.html">Countdown Timer</a></li>
             <li><a href="../html/todo.html">To-Do List</a></li>
             <li><a href="../index.html">Under Construction</a></li>
-            <li><a href="../index.html">Under Construction</a></li>
+            <li id="last"><a href="../index.html">Under Construction</a></li>
         </ul>
-        <div> 
+        <div id="popup">
+            <form>
+                <label>Timer Name</label><br>
+                <input type="text" id="name" name="name"><br>
+                <label>Days</label><br>
+                <input type="number" id="day" name="day"><br>
+                <label>Hours</label><br>
+                <input type="number" id="Hours" name="Hours"><br>
+                <label>Minutes</label><br>
+                <input type="number" id="Minutes" name="Minutes"><br>
+                <label>Seconds</label><br>
+                <input type="number" id="Seconds" name="Seconds"><br>
+                <input type="submit" id="submit" name="submit" onClick="submitPressed()">
+            </form>
+        </div>
+        <div id="timers"> 
            <table>
                 <caption>Days until 2030</caption>
                 <tr>
@@ -24,11 +41,31 @@
                 </tr>
                 <tr>
                     <td>000</td>
-                    <td>000</td>
-                    <td>000</td>
-                    <td>000</td>
+                    <td>00</td>
+                    <td>00</td>
+                    <td>00</td>
                 </tr>
             </table>
+            <table>
+                <caption>Days until end of semester</caption>
+                <tr>
+                    <th>Days</th>
+                    <th>Hours</th>
+                    <th>Minutes</th>
+                    <th>Seconds</th>
+                </tr>
+                <tr>
+                    <td>000</td>
+                    <td>00</td>
+                    <td>00</td>
+                    <td>00</td>
+                </tr>
+
+            </table>
+        </div>
+        <div id="addremovebuttonsdiv">
+            <button class="buttons" id="add" onClick="addCountDown()"><img src="../images/plus3t.png" alt="add countdown button" title="add"></button>
+            <button class="buttons" id="remove"><img src="../images/whitext.png" alt="remove countdown button" title="remove"></button>
         </div>
     </body>
     <footer>
@@ -41,3 +78,5 @@
             <p> Created by Tristan Delgado</p>
         </footer>
 </html>
+
+
