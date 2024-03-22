@@ -15,8 +15,8 @@ h1 {
   background: repeating-linear-gradient(-45deg, rgb(0, 0, 0), rgb(0, 0, 0)  10px, rgb(255, 186, 8) 10px, rgb(255, 186, 8) 20px);
 }
 
-#todo {
-    background-image: url(../images/checkmarks.png);
+#quotes {
+    background-image: url(../images/quotesbackground.png);
     background-size: contain;
 }
 

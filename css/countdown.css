@@ -21,6 +21,21 @@ input, label {
     margin: .5em;
 }
 
+#deletePopup {
+    visibility: hidden;
+    background-color: rgb(237, 242, 244);
+    border-style: solid;
+    border-width: 2px;
+    padding: 1em;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 100;
+    font-size: 1.5em;
+    text-align: left;
+}
+
 table {
     text-align: center;
     font-family: "Fuzzy Bubbles", sans-serif;
