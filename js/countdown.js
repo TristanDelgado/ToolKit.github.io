@@ -44,6 +44,7 @@ function submitPressed()
     minutes = document.createElement("td");
     seconds = document.createElement("td");
 
+    newRow.className = "timerValues";
     days.innerHTML    = document.getElementById("day").value;
     hours.innerHTML   = document.getElementById("hours").value;
     minutes.innerHTML = document.getElementById("minutes").value;
@@ -106,3 +107,47 @@ function removeSelected()
     }
 }
 
+function startUp()
+{
+    setInterval(tickTimers, "1000");
+}
+
+function tickTimers()
+{
+    var timerValues = document.getElementsByClassName("timerValues");
+    for(var i = 0; i < timerValues.length; i++)
+    {
+        var vals = timerValues[i].children;
+        if(vals[3].innerHTML != "0")
+        {
+            vals[3].innerHTML = parseInt(vals[3].innerHTML) - 1;
+        }
+        else
+        {
+            if(vals[2].innerHTML != "0")
+            {
+                vals[2].innerHTML = parseInt(vals[2].innerHTML) - 1;
+                vals[3].innerHTML = 59;
+            }
+            else
+            {
+                if(vals[1].innerHTML != "0")
+                {
+                    vals[1].innerHTML = parseInt(vals[1].innerHTML) - 1;
+                    vals[2].innerHTML = 59;
+                    vals[3].innerHTML = 59;
+                }
+                else
+                {
+                    if(vals[0].innerHTML != "0")
+                    {
+                        vals[0].innerHTML = parseInt(vals[0].innerHTML) - 1;
+                        vals[1].innerHTML = 23;
+                        vals[2].innerHTML = 59;
+                        vals[3].innerHTML = 59;
+                    }
+                }
+            }
+        }
+    }
+}
